@@ -1,0 +1,39 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#F5CF06;
+    --secundary-color:#8E4106;
+    --white:#ffffff;
+    --space-desfault: 70px;
+}
+
+body{
+    height: 100vh;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: var(--space-desfault);
+    padding-top: var(--space-desfault);
+    padding-right: var(--space-desfault);
+    padding-bottom: 24px;
+}
+
+header{
+    background-color: aqua;
+    height: 48px;
+}
+
+main{
+    background-color: tomato;
+    flex-grow: 1;
+}
+
+footer{
+    background-color: plum;
+
+}
