@@ -1,20 +1,20 @@
 /* Reset */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-*{
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --primary-color:#F5CF06;
-    --secundary-color:#8E4106;
-    --white:#ffffff;
+:root {
+    --primary-color: #F5CF06;
+    --secundary-color: #8E4106;
+    --white: #ffffff;
     --space-desfault: 70px;
 }
 
-body{
+body {
     height: 100vh;
     background: var(--primary-color);
     display: flex;
@@ -26,24 +26,83 @@ body{
     font-family: 'Righteous', cursive;
 }
 
-header{
-    background-color: aqua;
+header {
     height: 48px;
 }
 
-.logo{
-    display: flex;
+.logo {
+    display: inline-flex;
     align-items: center;
     gap: 16px;
     text-decoration: none;
     color: var(--secundary-color);
     font-size: 2rem;
 }
-main{
+
+main {
     flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
 }
 
-footer{
-    background-color: rgb(11, 243, 11);
+.title {
+    position: relative;
+    grid-column: 1/-1;
+    place-self: center;
+}
 
+.title__text {
+    font-size: 20vw;
+    color: var(--white);
+}
+
+.title__transparent {
+    position: absolute;
+    font-size: 27vw;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%);
+    color: #ffffff55;
+    z-index: -1;
+}
+
+.descripition {
+    grid-column: 1/7;
+    place-self: start center;
+    color: var(--secundary-color);
+}
+
+.descripition__title {
+    font-size: 4rem;
+}
+
+.descripition__text {
+    font-size: 1.2rem;
+    width: 500px;
+}
+
+.action {
+    grid-column: 7/-1;
+    place-self: center end;
+    height: 100px;
+    width: 411px;
+    background-color: var(--secundary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.pikachu {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%);
+}
+
+footer {
+    text-align: center;
+    color: var(--secundary-color);
 }
