@@ -1,4 +1,6 @@
 /* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -21,6 +23,7 @@ body{
     padding-top: var(--space-desfault);
     padding-right: var(--space-desfault);
     padding-bottom: 24px;
+    font-family: 'Righteous', cursive;
 }
 
 header{
@@ -28,12 +31,19 @@ header{
     height: 48px;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none;
+    color: var(--secundary-color);
+    font-size: 2rem;
+}
 main{
-    background-color: tomato;
     flex-grow: 1;
 }
 
 footer{
-    background-color: plum;
+    background-color: rgb(11, 243, 11);
 
 }
