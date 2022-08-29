@@ -105,3 +105,8 @@ footer {
     text-align: center;
     color: var(--secundary-color);
 }
+
+
+/* Tablet */
+
+@media(max-width:900px) {}
