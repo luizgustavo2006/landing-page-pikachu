@@ -68,7 +68,6 @@ main {
 
 .descripition {
     grid-column: 1/7;
-    place-self: start center;
     color: var(--secundary-color);
 }
 
