@@ -7,7 +7,7 @@
 ## Sobre
 Site do tipo landing page para 
 divulgar o persogem de um desenho animado chamado pokemon,
-no qual o personagem se chama pikachu.
+no qual o personagem se chama pikachu'.
 O objetivo desde projeto é colocar
 em prática os conhecimentos, sobre
 criação de site adquiridos no curso 
